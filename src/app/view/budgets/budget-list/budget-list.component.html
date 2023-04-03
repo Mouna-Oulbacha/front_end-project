@@ -1,0 +1,23 @@
+<table class="table table-bordered table-hover" >
+  <thead>
+  <th> code </th>
+  <th> montantInvistissement </th>
+  <th> montantFonctionnement </th>
+  <th> montantTotal </th>
+  <th> annee </th>
+  <th> budgetEntite </th>
+  <th> Action </th>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let c of budgets; index as i">
+    <td>{{c.code}}</td>
+    <td>{{c.montantInvistissement}}</td>
+    <td>{{c.montantFonctionnement}}</td>
+    <td>{{c.montantTotal}}</td>
+    <td>{{c.annee}}</td>
+    <td>{{c.budgetEntite}}</td>
+    <td><span (click)="delete(i)"><i class="fa fa-trash btn btn-danger"> </i></span></td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header"> New Budget </div>
+  <div class="card-body">
+
+    <div class="form-group">
+      <label for="code"> code </label>
+      <input id="code" type="text" class="form-control" [(ngModel)]="budget.code">
+    </div>
+
+    <div class="form-group">
+      <label for="montantInvistissement"> montantInvistissement </label>
+      <input id="montantInvistissement" type="text" class="form-control" [(ngModel)]="budget.montantInvistissement">
+    </div>
+
+    <div class="form-group">
+      <label for="montantFonctionnement"> montantFonctionnement </label>
+      <input id="montantFonctionnement" type="text" class="form-control" [(ngModel)]="budget.montantFonctionnement">
+    </div>
+
+    <div class="form-group">
+      <label for="montantTotal"> montantTotal </label>
+      <input id="montantTotal" type="text" class="form-control" [(ngModel)]="budget.montantTotal">
+    </div>
+
+    <div class="form-group">
+      <label for="annee"> annee </label>
+      <input id="annee" type="text" class="form-control" [(ngModel)]="budget.annee">
+    </div>
+
+    <div class="form-group">
+      <label for="budgetEntite"> budgetEntite </label>
+      <input id="budgetEntite" type="text" class="form-control" [(ngModel)]="budget.budgetEntite">
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()"> Ajouter </button>
+  </div>
+</div>
