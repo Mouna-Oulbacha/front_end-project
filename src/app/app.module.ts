@@ -16,6 +16,10 @@ import { BudgetEntiteEditComponent } from './view/budgetEntites/budget-entite-ed
 import { BudgetViewComponent } from './view/budgets/budget-view/budget-view.component';
 import { NavbarComponent } from './view/navbar/navbar.component';
 import { LoginComponent } from './view/login/login.component';
+import { AppelAchatCreateComponent } from './view/appelAchats/appel-achat-create/appel-achat-create.component';
+import { AppelAchatListComponent } from './view/appelAchats/appel-achat-list/appel-achat-list.component';
+import { AppelAchatViewComponent } from './view/appelAchats/appel-achat-view/appel-achat-view.component';
+import { AppelAchatEditComponent } from './view/appelAchats/appel-achat-edit/appel-achat-edit.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { LoginComponent } from './view/login/login.component';
     BudgetEntiteEditComponent,
     BudgetViewComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    AppelAchatCreateComponent,
+    AppelAchatListComponent,
+    AppelAchatViewComponent,
+    AppelAchatEditComponent
   ],
   imports: [
     BrowserModule,
