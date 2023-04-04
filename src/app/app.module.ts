@@ -28,6 +28,14 @@ import { CategorieAppelAchatCreateComponent } from './view/categorieAppelAchats/
 import { CategorieAppelAchatListComponent } from './view/categorieAppelAchats/categorie-appel-achat-list/categorie-appel-achat-list.component';
 import { CategorieAppelAchatViewComponent } from './view/categorieAppelAchats/categorie-appel-achat-view/categorie-appel-achat-view.component';
 import { CategorieAppelAchatEditComponent } from './view/categorieAppelAchats/categorie-appel-achat-edit/categorie-appel-achat-edit.component';
+import { EntiteAdminCreateComponent } from './view/entiteAdmins/entite-admin-create/entite-admin-create.component';
+import { EntiteAdminListComponent } from './view/entiteAdmins/entite-admin-list/entite-admin-list.component';
+import { EntiteAdminEditComponent } from './view/entiteAdmins/entite-admin-edit/entite-admin-edit.component';
+import { EntiteAdminViewComponent } from './view/entiteAdmins/entite-admin-view/entite-admin-view.component';
+import { CategorieEntiteAdminCreateComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-create/categorie-entite-admin-create.component';
+import { CategorieEntiteAdminListComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-list/categorie-entite-admin-list.component';
+import { CategorieEntiteAdminEditComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-edit/categorie-entite-admin-edit.component';
+import { CategorieEntiteAdminViewComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-view/categorie-entite-admin-view.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +62,15 @@ import { CategorieAppelAchatEditComponent } from './view/categorieAppelAchats/ca
     CategorieAppelAchatCreateComponent,
     CategorieAppelAchatListComponent,
     CategorieAppelAchatViewComponent,
-    CategorieAppelAchatEditComponent
+    CategorieAppelAchatEditComponent,
+    EntiteAdminCreateComponent,
+    EntiteAdminListComponent,
+    EntiteAdminEditComponent,
+    EntiteAdminViewComponent,
+    CategorieEntiteAdminCreateComponent,
+    CategorieEntiteAdminListComponent,
+    CategorieEntiteAdminEditComponent,
+    CategorieEntiteAdminViewComponent
   ],
   imports: [
     BrowserModule,
