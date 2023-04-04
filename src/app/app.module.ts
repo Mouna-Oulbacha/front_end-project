@@ -20,6 +20,14 @@ import { AppelAchatCreateComponent } from './view/appelAchats/appel-achat-create
 import { AppelAchatListComponent } from './view/appelAchats/appel-achat-list/appel-achat-list.component';
 import { AppelAchatViewComponent } from './view/appelAchats/appel-achat-view/appel-achat-view.component';
 import { AppelAchatEditComponent } from './view/appelAchats/appel-achat-edit/appel-achat-edit.component';
+import { AppelAchatProduitCreateComponent } from './view/appelAchatProduits/appel-achat-produit-create/appel-achat-produit-create.component';
+import { AppelAchatProduitListComponent } from './view/appelAchatProduits/appel-achat-produit-list/appel-achat-produit-list.component';
+import { AppelAchatProduitViewComponent } from './view/appelAchatProduits/appel-achat-produit-view/appel-achat-produit-view.component';
+import { AppelAchatProduitEditComponent } from './view/appelAchatProduits/appel-achat-produit-edit/appel-achat-produit-edit.component';
+import { CategorieAppelAchatCreateComponent } from './view/categorieAppelAchats/categorie-appel-achat-create/categorie-appel-achat-create.component';
+import { CategorieAppelAchatListComponent } from './view/categorieAppelAchats/categorie-appel-achat-list/categorie-appel-achat-list.component';
+import { CategorieAppelAchatViewComponent } from './view/categorieAppelAchats/categorie-appel-achat-view/categorie-appel-achat-view.component';
+import { CategorieAppelAchatEditComponent } from './view/categorieAppelAchats/categorie-appel-achat-edit/categorie-appel-achat-edit.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +46,15 @@ import { AppelAchatEditComponent } from './view/appelAchats/appel-achat-edit/app
     AppelAchatCreateComponent,
     AppelAchatListComponent,
     AppelAchatViewComponent,
-    AppelAchatEditComponent
+    AppelAchatEditComponent,
+    AppelAchatProduitCreateComponent,
+    AppelAchatProduitListComponent,
+    AppelAchatProduitViewComponent,
+    AppelAchatProduitEditComponent,
+    CategorieAppelAchatCreateComponent,
+    CategorieAppelAchatListComponent,
+    CategorieAppelAchatViewComponent,
+    CategorieAppelAchatEditComponent
   ],
   imports: [
     BrowserModule,

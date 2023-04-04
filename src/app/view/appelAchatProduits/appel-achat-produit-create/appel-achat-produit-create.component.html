@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card-header">Creation AppelAchatProduit</div>
+  <div class="card-body">
+
+    <div class="form-group">
+      <label for="code">Code :</label>
+      <input id="code" type="text" class="form-control" [(ngModel)]="appelAchatProduit.code">
+    </div>
+
+    <div class="form-group">
+      <label for="qteProduit">Quantite Produit :</label>
+      <input id="qteProduit" type="text" class="form-control" [(ngModel)]="appelAchatProduit.qteProduit">
+    </div>
+
+    <div class="form-group">
+      <label for="qteRecep">Quantite Receptionner :</label>
+      <input id="qteRecep" type="text" class="form-control" [(ngModel)]="appelAchatProduit.qteRecep">
+    </div>
+
+    <div class="form-group">
+      <label for="qteLivr">Quantite Livree :</label>
+      <input id="qteLivr" type="text" class="form-control" [(ngModel)]="appelAchatProduit.qteLivr">
+    </div>
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()"> Valider</button>
+  </div>
+</div>

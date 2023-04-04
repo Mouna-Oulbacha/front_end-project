@@ -1,0 +1,18 @@
+<table class="table table-bordered table-hover" >
+  <thead>
+  <th>Code</th>
+  <th>Quantite Produit</th>
+  <th>Quantite Receptionnee</th>
+  <th>Quabtite Livree</th>
+  <th>Actions</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of appelAchatProduits; index as i">
+    <td>{{c.code}}</td>
+    <td>{{c.qteProduit}}</td>
+    <td>{{c.qteRecep}}</td>
+    <td>{{c.qteLivr}}</td>
+    <td><span (click)="deleteByCode(c, i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>

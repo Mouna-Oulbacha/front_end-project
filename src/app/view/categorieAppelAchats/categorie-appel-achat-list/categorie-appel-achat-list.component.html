@@ -1,0 +1,14 @@
+<table class="table table-bordered table-hover" >
+  <thead>
+  <th>Code</th>
+  <th>Libelle</th>
+
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of categorieAppelAchats; index as i ">
+    <td>{{c.code}}</td>
+    <td>{{c.libelle}}</td>
+    <td><span (click)="deleteByCode(c, i)" class="fa fa-trash btn btn-sm" ></span></td>
+  </tr>
+  </tbody>
+</table>
