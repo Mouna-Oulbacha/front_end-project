@@ -1,0 +1,16 @@
+<table class="table table-bordered table-hover " *ngIf="categorieEntiteAdmins.length!= 0">
+  <thead>
+  <th>Libelle</th>
+  <th>Code</th>
+  <th>Actions</th>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let c of categorieEntiteAdmins; index as i">
+    <td>{{c.libelle}}</td>
+    <td>{{c.code}}</td>
+    <td><span (click)="deleteByCode(c,i)" class="fa fa-trash btn btn-sm"></span></td>
+    <td><span (click)="update(c,i)" class="fa fa-edit btn btn-warning"></span></td>
+  </tr>
+  </tbody>
+</table>
