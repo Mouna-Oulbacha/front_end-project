@@ -36,6 +36,32 @@ import { CategorieEntiteAdminCreateComponent } from './view/categorieEntiteAdmin
 import { CategorieEntiteAdminListComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-list/categorie-entite-admin-list.component';
 import { CategorieEntiteAdminEditComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-edit/categorie-entite-admin-edit.component';
 import { CategorieEntiteAdminViewComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-view/categorie-entite-admin-view.component';
+import {ExpressionBesoin} from "./controller/model/expression-besoin.model";
+import {ExpressionBesoinProduit} from "./controller/model/expression-besoin-produit.model";
+import {
+  ExpressionBesoinListComponent
+} from "./view/expressionBesoin/expression-besoin-list/expression-besoin-list.component";
+import {
+  ExpressionBesoinCreateComponent
+} from "./view/expressionBesoin/expression-besoin-create/expression-besoin-create.component";
+import {
+  ExpressionBesoinEditComponent
+} from "./view/expressionBesoin/expression-besoin-edit/expression-besoin-edit.component";
+import {
+  ExpressionBesoinProduitCreateComponent
+} from "./view/expressionBesoinProduit/expression-besoin-produit-create/expression-besoin-produit-create.component";
+import {
+  ExpressionBesoinProduitListComponent
+} from "./view/expressionBesoinProduit/expression-besoin-produit-list/expression-besoin-produit-list.component";
+import {
+  ExpressionBesoinProduitEditComponent
+} from "./view/expressionBesoinProduit/expression-besoin-produit-edit/expression-besoin-produit-edit.component";
+import {
+  ExpressionBesoinProduitViewComponent
+} from "./view/expressionBesoinProduit/expression-besoin-produit-view/expression-besoin-produit-view.component";
+import {
+  ExpressionBesoinViewComponent
+} from "./view/expressionBesoin/expression-besoin-view/expression-besoin-view.component";
 
 @NgModule({
   declarations: [
@@ -70,7 +96,15 @@ import { CategorieEntiteAdminViewComponent } from './view/categorieEntiteAdmins/
     CategorieEntiteAdminCreateComponent,
     CategorieEntiteAdminListComponent,
     CategorieEntiteAdminEditComponent,
-    CategorieEntiteAdminViewComponent
+    CategorieEntiteAdminViewComponent,
+    ExpressionBesoinListComponent,
+    ExpressionBesoinCreateComponent,
+    ExpressionBesoinEditComponent,
+    ExpressionBesoinViewComponent,
+    ExpressionBesoinProduitCreateComponent,
+    ExpressionBesoinProduitListComponent,
+    ExpressionBesoinProduitEditComponent,
+    ExpressionBesoinProduitViewComponent,
   ],
   imports: [
     BrowserModule,

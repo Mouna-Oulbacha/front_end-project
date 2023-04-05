@@ -1,0 +1,20 @@
+<table class="table table-bordered table-hover">
+  <thead>
+  <th style="color: rosybrown;">Reference</th>
+  <th style="color: rosybrown;">Total</th>
+  <th style="color: rosybrown;">budgetEntite</th>
+  <th style="color: rosybrown;">dateExpressionBesoin</th>
+
+  <th style="color: rosybrown;">Action</th>
+
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of expressoinBesoins; index as i" >
+    <td>{{c.ref}}</td>
+    <td>{{c.total}}</td>
+    <td>{{c.budgetEntite}}</td>
+    <td>{{c.dateExpressionBesoin}}</td>
+    <td><span (click)="deleteByRef(c,i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>

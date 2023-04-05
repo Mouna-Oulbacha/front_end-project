@@ -1,0 +1,25 @@
+<table class="table table-bordered table-hover">
+  <thead>
+  <th style="color: rosybrown;">Code</th>
+  <th style="color: rosybrown;">QuantiteAccorde</th>
+  <th style="color: rosybrown;">Produit</th>
+  <th style="color: rosybrown;">ExpressionBesoin</th>
+  <th style="color: rosybrown;">QuantiteLivre</th>
+  <th style="color: rosybrown;">QuantiteCommande</th>
+  <th style="color: rosybrown;">QuantiteReception</th>
+  <th style="color: rosybrown;">Action</th>
+
+  </thead>
+  <tbody>
+  <tr *ngFor="let c of expressoinBesoinProduits; index as i" >
+    <td>{{c.code}}</td>
+    <td>{{c.quantiteAccorde}}</td>
+    <td>{{c.quantiteCommande}}</td>
+    <td>{{c.quantiteReception}}</td>
+    <td>{{c.quantiteLivre}}</td>
+    <td>{{c.produit}}</td>
+    <td>{{c.expressionBesoin}}</td>
+    <td><span (click)="deleteByCode(c,i)" class="fa fa-trash btn btn-sm"></span></td>
+  </tr>
+  </tbody>
+</table>

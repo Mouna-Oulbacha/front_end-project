@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-header" style="background-color:  blueviolet;">Creation ExpressionBesoinProduit</div>
+  <div class="card-body">
+
+
+    <div class="form-group">
+      <label for="code">code</label>
+      <input id="code" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.code">
+    </div>
+
+    <div class="form-group">
+      <label for="quantite">quantite</label>
+      <input id="quantite" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.quantite">
+    </div>
+
+    <div class="form-group">
+      <label for="quantiteAccorde">quantiteAccorde</label>
+      <input id="quantiteAccorde" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.quantiteAccorde">
+    </div>
+
+    <div class="form-group">
+      <label for="quantiteCommande">quantiteCommande</label>
+      <input id="quantiteCommande" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.quantiteCommande">
+    </div>
+
+    <div class="form-group">
+      <label for="quantiteLivre">quantiteLivre</label>
+      <input id="quantiteLivre" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.quantiteLivre">
+    </div>
+
+    <div class="form-group">
+      <label for="quantiteReception">quantiteReception</label>
+      <input id="quantiteReception" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.quantiteReception">
+    </div>
+
+    <div class="form-group">
+      <label for="expressionBesoin">expressionBesoin</label>
+      <input id="expressionBesoin" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.expressionBesoin">
+    </div>
+
+    <div class="form-group">
+      <label for="produit">produit</label>
+      <input id="produit" type="text" class="form-control" [(ngModel)]="expressoinBesoinProduit.produit">
+    </div>
+
+
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="save()" style="background-color:  blueviolet;">Valider</button>
+  </div>
+</div>
+
+
