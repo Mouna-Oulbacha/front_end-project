@@ -1,0 +1,24 @@
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h1>Ajouter une categorie</h1>
+    </div>
+    <div class="card-body">
+
+      <div class="form-group">
+        <label for="code">Code</label>
+        <input type="text" class="form-control" id="code" [(ngModel)]="categorieProduit.code" >
+      </div>
+      <div class="form-group">
+        <label for="libelle">Libelle</label>
+        <input type="text" class="form-control" id="libelle" [(ngModel)]="categorieProduit.libelle" >
+      </div>
+
+      <div class="card-footer">
+        <button  class="btn btn-success" (click)="save()">register</button>àà
+      </div>
+
+    </div>
+  </div>
+</div>

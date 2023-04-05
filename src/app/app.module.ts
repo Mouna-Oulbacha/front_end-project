@@ -36,6 +36,14 @@ import { CategorieEntiteAdminCreateComponent } from './view/categorieEntiteAdmin
 import { CategorieEntiteAdminListComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-list/categorie-entite-admin-list.component';
 import { CategorieEntiteAdminEditComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-edit/categorie-entite-admin-edit.component';
 import { CategorieEntiteAdminViewComponent } from './view/categorieEntiteAdmins/categorie-entite-admin-view/categorie-entite-admin-view.component';
+import { ProduitCreateComponent } from './view/produit/produit-create/produit-create.component';
+import { ProduitListComponent } from './view/produit/produit-list/produit-list.component';
+import { ProduitViewComponent } from './view/produit/produit-view/produit-view.component';
+import { ProduitEditComponent } from './view/produit/produit-edit/produit-edit.component';
+import { CategorieProduitCreateComponent } from './view/categorieProduit/categorie-produit-create/categorie-produit-create.component';
+import { CategorieProduitListComponent } from './view/categorieProduit/categorie-produit-list/categorie-produit-list.component';
+import { CategorieProduitViewComponent } from './view/categorieProduit/categorie-produit-view/categorie-produit-view.component';
+import { CategorieProduitEditComponent } from './view/categorieProduit/categorie-produit-edit/categorie-produit-edit.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +78,15 @@ import { CategorieEntiteAdminViewComponent } from './view/categorieEntiteAdmins/
     CategorieEntiteAdminCreateComponent,
     CategorieEntiteAdminListComponent,
     CategorieEntiteAdminEditComponent,
-    CategorieEntiteAdminViewComponent
+    CategorieEntiteAdminViewComponent,
+    ProduitCreateComponent,
+    ProduitListComponent,
+    ProduitViewComponent,
+    ProduitEditComponent,
+    CategorieProduitCreateComponent,
+    CategorieProduitListComponent,
+    CategorieProduitViewComponent,
+    CategorieProduitEditComponent
   ],
   imports: [
     BrowserModule,
