@@ -15,7 +15,7 @@ export class AppelAchatProduitService {
   private url = environment.baseUrl + '/appelAchatProduit';
 
   public save(): Observable<AppelAchatProduit>{
-    return this.http.post<AppelAchatProduit> (this.url,this.appelAchatProduit);
+    return this.http.post<AppelAchatProduit> (this.url,this._appelAchatProduit);
   }
   public deleteByCode(code: string): Observable<number>{
     console.log('urrrrlll ==> ' + this.url + 'code/' + code);

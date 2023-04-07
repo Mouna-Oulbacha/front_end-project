@@ -1,9 +1,9 @@
 import {AppelAchat} from "./appel-achat.model";
+import { Produit } from "./produit";
 //import {Produit} from "./produit.model";
 
 
-class Produit {
-}
+
 
 export class AppelAchatProduit {
   public id: number;

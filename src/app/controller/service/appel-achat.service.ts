@@ -17,7 +17,7 @@ export class AppelAchatService {
   }
 
   public save(): Observable<AppelAchat>{
-    return this.http.post<AppelAchat>(this.url, this.appelAchat);
+    return this.http.post<AppelAchat>(this.url, this._appelAchat);
   }
 
   public findAll(): Observable<Array<AppelAchat>>{

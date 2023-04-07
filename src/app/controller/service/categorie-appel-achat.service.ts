@@ -16,7 +16,7 @@ export class CategorieAppelAchatService {
   private url = environment.baseUrl + '/CategorieAppelAchat';
 
   public save(): Observable<CategorieAppelAchat>{
-    return this.http.post<CategorieAppelAchat> (this.url,this.categorieAppelAchat);
+    return this.http.post<CategorieAppelAchat> (this.url,this._categorieAppelAchat);
   }
   public deleteByCode(code: string): Observable<number>{
     console.log('urrrrlll ==> ' + this.url + 'code/' + code);
@@ -29,26 +29,26 @@ export class CategorieAppelAchatService {
 
 
   get categorieAppelAchat(): CategorieAppelAchat {
-    if(this.categorieAppelAchat == null){
-      this.categorieAppelAchat = new CategorieAppelAchat();
+    if(this._categorieAppelAchat == null){
+      this._categorieAppelAchat = new CategorieAppelAchat();
     }
 
-    return this.categorieAppelAchat;
+    return this._categorieAppelAchat;
   }
 
   set categorieAppelAchat(value: CategorieAppelAchat) {
-    this.categorieAppelAchat = value;
+    this._categorieAppelAchat = value;
   }
 
   get categorieAppelAchats(): Array<CategorieAppelAchat> {
-    if(this.categorieAppelAchats == null){
-      this.categorieAppelAchats = new Array<CategorieAppelAchat>();
+    if(this._categorieAppelAchats == null){
+      this._categorieAppelAchats = new Array<CategorieAppelAchat>();
     }
-    return this.categorieAppelAchats;
+    return this._categorieAppelAchats;
   }
 
   set categorieAppelAchats(value: Array<CategorieAppelAchat>) {
-    this.categorieAppelAchats = value;
+    this._categorieAppelAchats = value;
   }
 
 
