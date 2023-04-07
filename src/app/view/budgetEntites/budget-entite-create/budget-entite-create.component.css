@@ -8,7 +8,7 @@
 }
 
 .card-header {
-  background-color: #19b7e3;
+  background-color: #026bf5;
   border-radius: 10px 10px 0 0;
   color: #fff;
   font-size: 20px;
@@ -41,7 +41,7 @@ input[type="text"] {
 }
 
 .btn-success {
-  background-color: #1b9aaf;
+  background-color: #026bf5;
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -55,5 +55,5 @@ input[type="text"] {
 }
 
 .btn-success:hover {
-  background-color: #1b9aaf;
+  background-color: #68e4ff;
 }
