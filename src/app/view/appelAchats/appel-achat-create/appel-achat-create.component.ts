@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {AppelAchatService} from "../../../controller/service/appel-achat.service";
-import {AppelAchat} from "../../../controller/model/appel-achat.model";
+import {AppelAchatService} from "src/app/controller/service/appel-achat.service";
+import {AppelAchat} from "src/app/controller/model/appel-achat.model";
 
 
 @Component({

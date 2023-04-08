@@ -13,7 +13,7 @@ export class CategorieAppelAchatService {
 
   private _categorieAppelAchat: CategorieAppelAchat;
   private _categorieAppelAchats: Array<CategorieAppelAchat>;
-  private url = environment.baseUrl + '/CategorieAppelAchat';
+  private url = environment.baseUrl + 'CategorieAppelAchat/';
 
   public save(): Observable<CategorieAppelAchat>{
     return this.http.post<CategorieAppelAchat> (this.url,this._categorieAppelAchat);

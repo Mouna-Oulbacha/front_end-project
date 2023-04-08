@@ -2,18 +2,19 @@ import { Injectable } from '@angular/core';
 import {AppelAchat} from "../model/appel-achat.model";
 import {HttpClient} from "@angular/common/http";
 import { Observable } from "rxjs";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppelAchatService {
-  private _appelAchat: any;
+  private _appelAchat: AppelAchat;
   private _appelAchats: Array<AppelAchat>;
-  private url = '/appelAchat'
+  private url = environment.baseUrl+'appelAchat/'
 
   public deleteByCode(code: string): Observable<number>{
     console.log('url ==> ' + this.url + 'code/' + code);
-    return this.http.delete<number>(this.url + 'code/' + this.appelAchat.code);
+    return this.http.delete<number>(environment.baseUrl+'appellAchat/' + 'code/' + this.appelAchat.code);
   }
 
   public save(): Observable<AppelAchat>{

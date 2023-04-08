@@ -12,7 +12,7 @@ export class AppelAchatProduitService {
 
   private _appelAchatProduit: AppelAchatProduit;
   private _appelAchatProduits: Array<AppelAchatProduit>;
-  private url = environment.baseUrl + '/appelAchatProduit';
+  private url = environment.baseUrl + 'appelAchatProduit/';
 
   public save(): Observable<AppelAchatProduit>{
     return this.http.post<AppelAchatProduit> (this.url,this._appelAchatProduit);
