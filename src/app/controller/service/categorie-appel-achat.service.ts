@@ -48,7 +48,7 @@ export class CategorieAppelAchatService {
   }
 
   set categorieAppelAchats(value: Array<CategorieAppelAchat>) {
-    this._categorieAppelAchats = value;
+    this.categorieAppelAchats = value;
   }
 
 

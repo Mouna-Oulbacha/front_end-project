@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {CategorieProduitService} from "../../../controller/service/categorie-produit.service";
-import {CategorieProduit} from "../../../controller/model/categorie-produit";
+import {CategorieProduitService} from "src/app/controller/service/categorie-produit.service";
+import {CategorieProduit} from "src/app/controller/model/categorie-produit";
 
 @Component({
   selector: 'app-categorie-produit-create',

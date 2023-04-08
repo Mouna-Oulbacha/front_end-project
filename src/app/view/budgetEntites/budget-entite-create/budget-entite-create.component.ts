@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {BudgetService} from "../../../controller/service/budget.service";
-import {BudgetEntite} from "../../../controller/model/budget-entite.model";
-import {BidgetEntiteService} from "../../../controller/service/bidget-entite.service";
+import {BudgetEntite} from "src/app/controller/model/budget-entite.model";
+import {BidgetEntiteService} from "src/app/controller/service/bidget-entite.service";
 import {Budget} from "../../../controller/model/budget.model";
 
 @Component({

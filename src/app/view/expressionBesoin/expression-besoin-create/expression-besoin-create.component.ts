@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ExpressionBesoinService} from "src/app/controller/service/expression-besoin.service";
-import {ExpressionBesoin} from "../../../controller/model/expression-besoin.model";
+import {ExpressionBesoin} from "src/app/controller/model/expression-besoin.model";
 
 
 @Component({
