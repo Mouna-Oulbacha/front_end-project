@@ -4,6 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
 import {Observable} from "rxjs";
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -19,10 +20,14 @@ export class EntiteAdminService {
     return this.http.post<EntiteAdmin>(this.Url, this._entiteAdmin);
 
   }
-  public deleteByCode(code: String ): Observable <number>{
-    return this.http.delete<number>(this.Url + 'Code/' + code);
-
+  public deleteByCode(code: String): Observable<EntiteAdmin>{
+    return this.http.post<EntiteAdmin>(this.Url, this.entiteAdmin);
   }
+/*  public deleteByCode(code: String ): Observable <number>{
+    console.log('url ==> ' + this.Url + 'code/' + code);
+    return this.http.delete<number>(this.Url + 'Code/' + this.entiteAdmin.code);
+
+  }*/
 
   public findAll(): Observable <Array<EntiteAdmin>>{
     return this.http.get<Array<EntiteAdmin>>(this.Url);
@@ -50,7 +55,7 @@ export class EntiteAdminService {
   }
 
   public update(index: number, entiteAdmin: EntiteAdmin) {
-    this._entiteAdmin=entiteAdmin;
+    this.entiteAdmin=entiteAdmin;
   }
 }
 

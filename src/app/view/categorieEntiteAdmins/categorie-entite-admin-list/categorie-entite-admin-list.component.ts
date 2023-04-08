@@ -18,7 +18,7 @@ export class CategorieEntiteAdminListComponent implements OnInit{
   public deleteByCode(categorieEntiteAdmin: CategorieEntiteAdmin, index: number): void{
     this.categorieEntiteAdminService.deleteByCode(categorieEntiteAdmin.code).subscribe(data=> {
       if (data > 0){
-        this.categorieEntiteAdmins.slice(index,1);
+        this.categorieEntiteAdmins.splice(index,1);
       }else{
         alert('DEL ERROR');
       }

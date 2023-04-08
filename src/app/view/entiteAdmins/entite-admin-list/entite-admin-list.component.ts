@@ -15,17 +15,19 @@ export class EntiteAdminListComponent implements OnInit  {
   constructor(private entiteAdminService: EntiteAdminService) {
   }
 
-
-  public deleteByCode(entiteAdmin: EntiteAdmin, index: number): void{
+  public delete(index: number){
+    this.entiteAdmins.splice(index,1);
+  }
+ /* public deleteByCode(entiteAdmin: EntiteAdmin, index: number): void{
     this.entiteAdminService.deleteByCode(entiteAdmin.code).subscribe(data=> {
       if (data > 0){
-        this.entiteAdmins.slice(index,1);
+        this.entiteAdmins.splice(index,1);
       }else{
         alert('DEL ERROR');
       }
     });
 
-  }
+  }*/
   public update(entiteAdmin: EntiteAdmin, index: number): void{
     this.entiteAdminService.update(index, entiteAdmin);
   }

@@ -20,10 +20,11 @@ export class CategorieEntiteAdminCreateComponent implements OnInit {
       if (data != null) {
 
         this.categorieEntiteAdmins.push(this.clone({...this.categorieEntiteAdmin}));
+
         alert('SAVE SUCCESS');
       } else {
         alert('SAVE ERROR ::: REF EXIST');
-      }
+      } alert (data)
     });
   }
 

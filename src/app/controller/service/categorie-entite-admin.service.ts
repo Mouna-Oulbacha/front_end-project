@@ -3,7 +3,7 @@ import {CategorieEntiteAdmin} from "../model/categorie-entite-admin.model";
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
 import {Observable} from "rxjs";
-import {EntiteAdmin} from "../model/entite-admin.model";
+
 
 @Injectable({
   providedIn: 'root'

@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {CategorieEntiteAdmin} from "../../../controller/model/categorie-entite-admin.model";
-import {CategorieEntiteAdminService} from "../../../controller/service/categorie-entite-admin.service";
 import {EntiteAdminService} from "../../../controller/service/entite-admin.service";
 import {EntiteAdmin} from "../../../controller/model/entite-admin.model";
 
@@ -26,7 +24,7 @@ export class EntiteAdminCreateComponent implements OnInit {
         alert('SAVE SUCCESS');
       } else {
         alert('SAVE ERROR ::: REF EXIST');
-      }
+      } alert (data)
     });
   }
 
