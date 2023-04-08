@@ -10,7 +10,7 @@ import {Observable} from "rxjs";
 })
 export class EntiteAdminService {
   private _entiteAdmin=new EntiteAdmin();
-  private _entiteAdmins=new Array<EntiteAdmin>;
+  private _entiteAdmins=new Array<EntiteAdmin>();
 
   constructor(private http:HttpClient) { }
 

@@ -6,7 +6,7 @@ export class ExpressionBesoin {
   public total : number;
   public ref : string;
   public dateExpressionBesoin : Date;
-  public  budgetEntite : BudgetEntite;
-  public expressionBesoinProduits = new Array<ExpressionBesoinProduit>;
+  public  budgetEntite=new BudgetEntite();
+  public expressionBesoinProduits = new ExpressionBesoinProduit();
 
 }

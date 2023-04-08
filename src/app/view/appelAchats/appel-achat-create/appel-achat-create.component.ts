@@ -21,7 +21,8 @@ export class AppelAchatCreateComponent implements OnInit{
         alert('SAVE SUCCESS');
       } else{
         alert('SAVE ERROR :: REF EXIST');
-      }alert (data)
+      }
+      alert (data)
     });
   }
 

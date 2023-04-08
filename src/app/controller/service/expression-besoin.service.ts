@@ -13,12 +13,12 @@ export class ExpressionBesoinService {
 
 
 
-  private _expressoinBesoin : ExpressionBesoin;
-  private _expressoinBesoins : Array <ExpressionBesoin>;
+  private _expressoinBesoin =new ExpressionBesoin();
+  private _expressoinBesoins =new Array <ExpressionBesoin>;
   private url = environment.baseUrl + 'expressionBesoin/';
 
   public save (): Observable<ExpressionBesoin >{
-    return this.http.post<ExpressionBesoin>(this.url,this.expressoinBesoin);
+    return this.http.post<ExpressionBesoin>(environment.baseUrl + 'expressionBesoin/',this.expressoinBesoin);
   }
   public deleteByRef( ref:string): Observable<number >{
     console.log('urrrlll==>'+this.url+'ref/'+ref);
