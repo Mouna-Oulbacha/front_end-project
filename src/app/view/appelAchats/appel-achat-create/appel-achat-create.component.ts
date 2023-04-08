@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {AppelAchatService} from "src/app/controller/service/appel-achat.service";
-import {AppelAchat} from "src/app/controller/model/appel-achat.model";
+import {AppelAchatService} from "../../../controller/service/appel-achat.service";
+import {AppelAchat} from "../../../controller/model/appel-achat.model";
+
 
 @Component({
   selector: 'app-appel-achat-create',
@@ -14,17 +15,14 @@ export class AppelAchatCreateComponent implements OnInit{
   ngOnInit(): void {
   }
   public save(): void{
-    this.appelAchatService.save().subscribe(data => {
-      if(data != null){
-        this.appelAchats.push({...this.appelAchat});
-        this.appelAchatService.appelAchat = null;
+    this.appelAchatService.save().subscribe((data )=> {
+      if (data != null) {
+        this.appelAchats.push(this.clone({...this.appelAchat}));
         alert('SAVE SUCCESS');
       } else{
         alert('SAVE ERROR :: REF EXIST');
-
-      }
-      alert (data)
-    })
+      }alert (data)
+    });
   }
 
   get appelAchat(): AppelAchat {
@@ -41,6 +39,17 @@ export class AppelAchatCreateComponent implements OnInit{
 
   set appelAchats(value: Array<AppelAchat>) {
     this.appelAchatService.appelAchats = value;
+  }
+
+  private clone(appelAchat: AppelAchat) {
+    let myClone=new AppelAchat();
+    myClone.id=appelAchat.id;
+    myClone.dateAppelAchat = appelAchat.dateAppelAchat;
+    myClone.code = appelAchat.code;
+    myClone.total = appelAchat.total;
+    myClone.appelAchatProduit = appelAchat.appelAchatProduit;
+
+    return myClone;
   }
 
 }
