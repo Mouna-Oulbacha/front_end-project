@@ -8,8 +8,8 @@ import {environment} from "../../../environments/environment";
   providedIn: 'root'
 })
 export class AppelAchatService {
-  private _appelAchat: AppelAchat;
-  private _appelAchats: Array<AppelAchat>;
+  private _appelAchat=new AppelAchat();
+  private _appelAchats=new Array<AppelAchat>;
   private url = environment.baseUrl+'appelAchat/'
 
   public deleteByCode(code: string): Observable<number>{
@@ -18,7 +18,7 @@ export class AppelAchatService {
   }
 
   public save(): Observable<AppelAchat>{
-    return this.http.post<AppelAchat>(this.url, this._appelAchat);
+    return this.http.post<AppelAchat>( environment.baseUrl+'appelAchat/', this.appelAchat);
   }
 
   public findAll(): Observable<Array<AppelAchat>>{

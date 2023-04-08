@@ -5,6 +5,6 @@ export class AppelAchat {
   public code: string;
   public dateAppelAchat: Date;
   public total: number;
-  public appelAchatProduit: AppelAchatProduit;
+  public appelAchatProduit=new AppelAchatProduit();
 
 }
