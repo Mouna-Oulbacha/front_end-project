@@ -9,15 +9,15 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class EntiteAdminService {
-  private _entiteAdmin: EntiteAdmin;
-  private _entiteAdmins: Array<EntiteAdmin>;
+  private _entiteAdmin=new EntiteAdmin();
+  private _entiteAdmins=new Array<EntiteAdmin>();
 
   constructor(private http:HttpClient) { }
 
   private Url = environment.baseUrl + 'entiteAdmin/';
 
   public save(): Observable <EntiteAdmin>{
-    return this.http.post<EntiteAdmin>(this.Url, this._entiteAdmin);
+    return this.http.post<EntiteAdmin>(environment.baseUrl + 'entiteAdmin/', this.entiteAdmin);
 
   }
   public deleteByCode(code: String): Observable<EntiteAdmin>{

@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ExpressionBesoinService} from "../../../controller/service/expression-besoin.service";
 import {ExpressionBesoin} from "../../../controller/model/expression-besoin.model";
-import {ExpressionBesoinProduitService} from "../../../controller/service/expression-besoin-produit.service";
-import {ExpressionBesoinProduit} from "../../../controller/model/expression-besoin-produit.model";
+import {ExpressionBesoinProduitService} from "src/app/controller/service/expression-besoin-produit.service";
+import {ExpressionBesoinProduit} from "src/app/controller/model/expression-besoin-produit.model";
 
 @Component({
   selector: 'app-expression-besoin-produit-create',

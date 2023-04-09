@@ -1,25 +1,29 @@
+
 <div class="card">
   <div class="card-header">Creation AppelAchatProduit</div>
+
   <div class="card-body">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
 
     <div class="form-group">
       <label for="code">Code :</label>
-      <input id="code" type="text" class="form-control" [(ngModel)]="appelAchatProduit.code">
+      <input id="code" type="text" class="form-control" [(ngModel)]="_appelAchatProduit.code">
     </div>
 
     <div class="form-group">
       <label for="qteProduit">Quantite Produit :</label>
-      <input id="qteProduit" type="text" class="form-control" [(ngModel)]="appelAchatProduit.qteProduit">
+      <input id="qteProduit" type="text" class="form-control" [(ngModel)]="_appelAchatProduit.qteProduit">
     </div>
 
     <div class="form-group">
       <label for="qteRecep">Quantite Receptionner :</label>
-      <input id="qteRecep" type="text" class="form-control" [(ngModel)]="appelAchatProduit.qteRecep">
+      <input id="qteRecep" type="text" class="form-control" [(ngModel)]="_appelAchatProduit.qteRecep">
     </div>
 
     <div class="form-group">
       <label for="qteLivr">Quantite Livree :</label>
-      <input id="qteLivr" type="text" class="form-control" [(ngModel)]="appelAchatProduit.qteLivr">
+      <input id="qteLivr" type="text" class="form-control" [(ngModel)]="_appelAchatProduit.qteLivr">
     </div>
 
   </div>

@@ -57,3 +57,7 @@ input[type="text"] {
 .btn-success:hover {
   background-color: #68e4ff;
 }
+.card-body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}

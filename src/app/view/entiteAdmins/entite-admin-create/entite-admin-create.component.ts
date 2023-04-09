@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {EntiteAdminService} from "../../../controller/service/entite-admin.service";
-import {EntiteAdmin} from "../../../controller/model/entite-admin.model";
+import {EntiteAdminService} from "src/app/controller/service/entite-admin.service";
+import {EntiteAdmin} from "src/app/controller/model/entite-admin.model";
 
 @Component({
   selector: 'app-entite-admin-create',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {BudgetService} from "../../../controller/service/budget.service";
-import {Budget} from "../../../controller/model/budget.model";
+import {BudgetService} from "src/app/controller/service/budget.service";
+import {Budget} from "src/app/controller/model/budget.model";
 
 @Component({
   selector: 'app-budget-create',
