@@ -16,7 +16,7 @@ export class ExpressionBesoinCreateComponent implements OnInit {
   public save ():void{
     this.expressionBesoinService.save().subscribe(data => {
       if(data !=null){
-
+        this.expressoinBesoins.push(this.clone({...this.expressoinBesoin}));
         alert('SAVE SUCCESS');
       }else {
         alert('SAVE ERROR ::: REF EXIST');
@@ -40,6 +40,16 @@ export class ExpressionBesoinCreateComponent implements OnInit {
   set expressoinBesoins(value: Array<ExpressionBesoin>) {
 
     this.expressionBesoinService.expressoinBesoins = value;
+  }
+  private clone (expressinBesoin: ExpressionBesoin) {
+    let myClone=new ExpressionBesoin();
+    myClone.id = expressinBesoin.id;
+    myClone.ref =expressinBesoin.ref;
+    myClone. total= expressinBesoin.total;
+    myClone.budgetEntite = expressinBesoin.budgetEntite;
+    myClone.dateExpressionBesoin = expressinBesoin.dateExpressionBesoin;
+    myClone.expressionBesoinProduits = expressinBesoin.expressionBesoinProduits;
+    return myClone;
   }
 }
 
